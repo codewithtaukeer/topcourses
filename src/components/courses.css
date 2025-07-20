@@ -1,0 +1,12 @@
+.Courses {
+  width: 70vw;
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;           /* 🔑 Allow items to wrap */
+  gap: 20px;                 /* Optional: space between cards */
+  justify-content: center;  /* Optional: center cards */
+  padding: 1rem;
+        /* Optional: vertical scroll if needed */
+}
+
+

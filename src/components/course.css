@@ -1,0 +1,72 @@
+
+.Card {
+  width: 300px;
+  min-height: 360px;
+  background-color: #1f1b2e; /* Optional: gives contrast */
+  color: white;
+  border-radius: 10px;
+ padding-top:0px;
+  margin-bottom: 20px;
+  
+  text-align: center;
+  gap:1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+
+
+
+}
+.Card:hover{
+
+  transform: scale(1.06);
+  transition: transform 0.3s ease; /* smooth animation */
+  cursor: pointer;
+}
+
+
+  .image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ✅ ensures full image is shown */
+  border-radius: 10px;
+  background-color: white; /* Optional: keeps aspect ratio visible */
+  max-height: 200px; /* adjust as needed */
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.75em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;           /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.heart-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border:2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
